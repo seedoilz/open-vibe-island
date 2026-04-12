@@ -354,7 +354,7 @@ struct TerminalJumpService {
         guard let cli = Self.vscodeFamilyCLI[bundleIdentifier] else {
             return false
         }
-        return processRunner(cli, ["-r", workspacePath])
+        return processRunner(cli, [workspacePath])
     }
 
     // MARK: - JetBrains IDE family
